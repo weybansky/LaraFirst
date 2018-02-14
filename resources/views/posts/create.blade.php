@@ -5,7 +5,7 @@
   <h3>Create a New Post</h3>
 
   {{-- Post Create Form --}}
-  <form method="POST" action="/posts">
+  <form method="POST" action="{{ url('') }}/posts">
     {{-- Ensures that user is submitting the form from the same site --}}
     {{ csrf_field() }}
 

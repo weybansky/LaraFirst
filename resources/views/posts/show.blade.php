@@ -56,12 +56,12 @@
 
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" class="form-control" value="{{ auth()->check()? auth()->user()->name : "" }}" {{ auth()->check()? "readonly disabled": "" }} required>
+            <input type="text" name="name" class="form-control" value="{{ auth()->check()? auth()->user()->name : "" }}" {{ auth()->check()? "readonly": "" }} required>
           </div>
 
           <div class="form-group">
             <label for="name">Email:</label>
-            <input type="email" name="email" class="form-control" value="{{ auth()->check()? auth()->user()->email : "" }}" {{ auth()->check()? "readonly disabled": "" }} required>
+            <input type="email" name="email" class="form-control" value="{{ auth()->check()? auth()->user()->email : "" }}" {{ auth()->check()? "readonly": "" }} required>
           </div>
 
         <div class="form-group">

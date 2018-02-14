@@ -12,7 +12,7 @@
       {{-- @if(isset($archives)) --}}
         @foreach ($archives as $archive)
         <li>
-          <a href="/?month={{ $archive['month'] }}&year={{ $archive['year'] }}">
+          <a href="{{ url('') }}/?month={{ $archive['month'] }}&year={{ $archive['year'] }}">
             {{ $archive['month'] }} {{ $archive['year'] }}
           </a>
           ({{ $archive['published'] }})
@@ -25,8 +25,8 @@
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled">
-      <li><a href="#">GitHub</a></li>
-      <li><a href="#">Twitter</a></li>
+      <li><a href="https://github.com/weybansky">GitHub</a></li>
+      <li><a href="https://twitter.com/weybansky">Twitter</a></li>
       <li><a href="#">Facebook</a></li>
     </ol>
   </div>

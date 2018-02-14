@@ -5,7 +5,7 @@
   <h3>Edit Post</h3>
 
   {{-- Post Create Form --}}
-  <form method="POST" action="/posts/{{ $post->id }}">
+  <form method="POST" action="{{ url('') }}/posts/{{ $post->id }}">
     {{-- Ensures that user is submitting the form from the same site --}}
     {{ csrf_field() }}
 
