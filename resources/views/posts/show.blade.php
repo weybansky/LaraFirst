@@ -66,7 +66,7 @@
 
         <div class="form-group">
           <label for="body">Comment</label>
-          <textarea name="body" placeholder="Your comment here..." class="form-control" required></textarea>
+          <textarea name="body" placeholder="Your comment here..." class="form-control"></textarea>
         </div>
 
         <div class="form-group">

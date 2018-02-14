@@ -15,7 +15,7 @@
                     @endif
 
                     You are logged in!
-                    <a class="btn btn-info" href="/posts/create" role="button">Create a new Post</a>
+                    <a class="btn btn-info" href="{{ url('') }}/posts/create" role="button">Create a new Post</a>
 
                     <h3>List of Post</h3>
 
@@ -36,15 +36,15 @@
                             <tr>
                               <td>{{ $loop->iteration }}</td>
                               <td>
-                                <a href="/posts/{{ $post->id }}">
+                                <a href="{{ url('') }}/posts/{{ $post->id }}">
                                   {{ $post->title }}
                                 </a>
                               </td>
                               <td>Nill</td>
                               <td>{{ $post->created_at }}</td>
                               <td>
-                                <a href="/posts/{{ $post->id }}/edit" class="btn btn-primary" role="button">Edit</a>
-                                <a href="/posts/{{ $post->id }}/delete" class="btn btn-danger" role="button">Delete</a>
+                                <a href="{{ url('') }}/posts/{{ $post->id }}/edit" class="btn btn-primary" role="button">Edit</a>
+                                <a href="{{ url('') }}/posts/{{ $post->id }}/delete" class="btn btn-danger" role="button">Delete</a>
                               </td>
                             </tr>
                           @endforeach
