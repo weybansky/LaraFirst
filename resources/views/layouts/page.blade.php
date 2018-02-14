@@ -1,6 +1,6 @@
 @include('include.header')
 @include('include.nav')
 
-  @yield('content')
+  {{-- @yield('content') --}}
 
 @include('include.footer')

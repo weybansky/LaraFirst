@@ -50,9 +50,6 @@ class PostsController extends Controller
       // // $post->body =
       // auth()->user()->posts()->save($post);
 
-      // Another method is this
-      // Post::create(request()->all());
-
       // redirecting to another url
       return redirect('/');
 

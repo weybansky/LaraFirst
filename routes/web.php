@@ -11,7 +11,7 @@
 |
 */
 
-// Route::get('/', function () {
+// Route::get('/welcome', function () {
 //     return view('welcome');
 // });
 
@@ -37,9 +37,11 @@ Route::get('posts/{post}/delete', 'PostsController@destroy');
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 Route::get('/posts/{post}/comments/{comment}', 'CommentsController@destroy');
 
+
 // Authentication
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 // Pages
 Route::get('/p/page', function() {
@@ -48,3 +50,5 @@ Route::get('/p/page', function() {
 Route::get('page/create-new-page', function() {
     return view('pages.create');
 });
+
+// Nominations and Voting System

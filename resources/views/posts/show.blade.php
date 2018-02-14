@@ -14,6 +14,7 @@
 
   <hr>
 
+  {{-- Comments Section --}}
   <div class="comments">
     <ul class="list-group">
       <l1 class="list-group-item">Comments</li>
@@ -31,7 +32,7 @@
 
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a class="blog-nav-item" href="/posts/{{ $post->id }}/comments/{{ $comment->id }}">Delete</a>
+                  <a class="blog-nav-item" href="{{ url('') }}/posts/{{ $post->id }}/comments/{{ $comment->id }}">Delete</a>
                 </li>
               </ul>
 
@@ -50,17 +51,17 @@
       Add your Comment
     </div>
     <div class="panel-body">
-      <form method="POST" action="/posts/{{ $post->id }}/comments">
+      <form method="POST" action="{{ url('') }}/posts/{{ $post->id }}/comments">
         {{ csrf_field() }}
 
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" class="form-control" value="{{ auth()->check()? auth()->user()->name : "" }}" {{ auth()->check()? "readonly": "" }} required>
+            <input type="text" name="name" class="form-control" value="{{ auth()->check()? auth()->user()->name : "" }}" {{ auth()->check()? "readonly disabled": "" }} required>
           </div>
 
           <div class="form-group">
             <label for="name">Email:</label>
-            <input type="email" name="email" class="form-control" value="{{ auth()->check()? auth()->user()->email : "" }}" {{ auth()->check()? "readonly": "" }} required>
+            <input type="email" name="email" class="form-control" value="{{ auth()->check()? auth()->user()->email : "" }}" {{ auth()->check()? "readonly disabled": "" }} required>
           </div>
 
         <div class="form-group">

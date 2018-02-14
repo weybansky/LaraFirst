@@ -2,9 +2,9 @@
 <div class="blog-masthead">
   <div class="container">
     <nav class="blog-nav">
-      <a class="blog-nav-item active" href="/">Home</a>
-      <a class="blog-nav-item" href="/posts/create">Create Post</a>
-      <a class="blog-nav-item" href="#">New features</a>
+      <a class="blog-nav-item active" href="{{ url('') }}">Home</a>
+      <a class="blog-nav-item" href="{{ url('/posts/create') }}">Create Post</a>
+      <a class="blog-nav-item" href="{{ url('#') }}">New features</a>
 
       @if (Auth::guest())
         <a class="blog-nav-item" href="{{ route('login') }}">Login</a>
@@ -30,9 +30,6 @@
           </ul>
         </li>
       @endif
-
-
-
 
     </nav>
   </div>

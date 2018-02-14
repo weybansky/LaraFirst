@@ -6,20 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="LaraFist App - My first laravel project">
+    <meta name="author" content="Abdulwahab Nasir">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
 
     <title>Blog Template for Bootstrap</title>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    {{-- Styles --}}
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/css/blog.css" rel="stylesheet">
-
-    {{-- TinyMCE Visual Editor --}}
-    <script src="/js/tinymce/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+    {{-- TinyMCE --}}
+    <!-- <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script> -->
+    <!-- <script>tinymce.init({ selector:'textarea' });</script> -->
     
   </head>
 
